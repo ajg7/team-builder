@@ -20,7 +20,7 @@ const teamMembers = [
     {
         id: 3,
         name: "Dwight Schrute",
-        email: "blackbearbeets@hotmail.com",
+        email: "blackbearbeets@aol.com",
         role: "Salesman/AtRM",
     },
     {
