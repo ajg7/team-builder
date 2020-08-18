@@ -22,6 +22,9 @@ function TeamMemberForm(props) {
     const handleSubmit = event => {
         event.preventDefault();
         submit(name, email, role);
+        setName("")
+        setEmail("")
+        setRole("")
     }
 
     return (
@@ -30,15 +33,15 @@ function TeamMemberForm(props) {
             <form onSubmit={event => handleSubmit(event)}>
                 <label className="name">
                     Name: 
-                    <input type="text" onChange={changeName}/> <br />
+                    <input type="text" onChange={changeName} value={name} /> <br />
                 </label>
                 <label className="name">
                     Email: 
-                    <input type="email" onChange={changeEmail}/> <br />
+                    <input type="email" onChange={changeEmail} value={email} /> <br />
                 </label>
                 <label className="name">
                     Role: 
-                    <input type="text" onChange={changeRole}/> <br />
+                    <input type="text" onChange={changeRole} value={role} /> <br />
                 </label>
                 <button>Submit</button>
             </form>
