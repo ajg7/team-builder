@@ -8,11 +8,11 @@ function TeamMemberForm(props) {
             <h2>Fill Out</h2>
             <form>
                 <label>
-                    Name:
-                    <input type="text" />
-                    Email:
-                    <input type="email" />
-                    Role:
+                    Name: 
+                    <input type="text" /> <br />
+                    Email: 
+                    <input type="email" /> <br />
+                    Role: 
                     <input type="text" />
                 </label>
             </form>
