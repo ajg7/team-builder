@@ -33,15 +33,15 @@ function TeamMemberForm(props) {
             <form onSubmit={event => handleSubmit(event)}>
                 <label className="name">
                     Name: 
-                    <input type="text" onChange={changeName} value={name} /> <br />
+                    <input type="text" onChange={changeName} value={name} name="name" /> <br />
                 </label>
                 <label className="name">
                     Email: 
-                    <input type="email" onChange={changeEmail} value={email} /> <br />
+                    <input type="email" onChange={changeEmail} value={email} name="email" /> <br />
                 </label>
                 <label className="name">
                     Role: 
-                    <input type="text" onChange={changeRole} value={role} /> <br />
+                    <input type="text" onChange={changeRole} value={role} name="role" /> <br />
                 </label>
                 <button>Submit</button>
             </form>
