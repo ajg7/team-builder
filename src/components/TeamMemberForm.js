@@ -43,7 +43,7 @@ function TeamMemberForm(props) {
                     Role: 
                     <input type="text" onChange={changeRole} value={role} name="role" /> <br />
                 </label>
-                <button>Submit</button>
+                <button id="submit-button">Submit</button>
             </form>
         </div>
     )

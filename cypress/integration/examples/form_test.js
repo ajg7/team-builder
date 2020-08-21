@@ -22,9 +22,9 @@ describe('Team Builder Test', () => {
             .should("have.value", "ajgebara@gmail.com")
         })
         it('can get password input', () => {
-            // cy.get("input[name='password']")
-            // .type("charmeleon777_7")
-            // .should("have.value", "ajgebara@gmail.com")
+            cy.get("input[name='password']")
+            .type("charmeleon777_7")
+            .should("have.value", "ajgebara@gmail.com")
         })
     describe("Terms of Service Test", () => {
         it('can click on terms of service', () => {
@@ -34,12 +34,34 @@ describe('Team Builder Test', () => {
         })
     describe("Data Submission Test", () => {
         it("user can submit data", () => {
-            
+            cy.get('form').submit()
         })
     })
     describe("Form Validation Test", () => {
         it("form validation if input is left empty", () => {
-
+            cy.get("input[value='values.name']")
+            .type("")
+            .should("have.value", "")
+        })
+        it("form validation if input is left empty", () => {
+            cy.get("input[value='values.email']")
+            .type("")
+            .should("have.value", "")
+        })
+        it("form validation if input is left empty", () => {
+            cy.get("input[value='values.password']")
+            .type("")
+            .should("have.value", "")
+        })
+        it("form validation if input is left empty", () => {
+            cy.get("input[value='values.position']")
+            .type("")
+            .should("have.value", "")
+        })
+        it("form validation if input is left empty", () => {
+            cy.get("input[value='values.title']")
+            .type("")
+            .should("have.value", "")
         })
     })
     })
